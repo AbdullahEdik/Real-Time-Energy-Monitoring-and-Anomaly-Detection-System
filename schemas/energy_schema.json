@@ -1,0 +1,19 @@
+{
+  "title": "EnergyReading",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "device_id": { "type": "string" },
+    "energy_consumption": { "type": "number" },
+    "anomaly_label": { "type": "integer" },
+    "original_label": { "type": "string" }
+  },
+  "required": [
+    "timestamp",
+    "device_id",
+    "energy_consumption",
+    "anomaly_label",
+    "original_label"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,18 @@
+{
+  "title": "AnomalyEvent",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "device_id": { "type": ["string", "null"] },
+    "energy_consumption": { "type": "number" },
+    "gt_label": { "type": "integer", "enum": [0, 1] },
+    "pred_anomaly": { "type": "integer", "enum": [0, 1] },
+    "hst_score": { "type": "number" },
+    "stl_z": { "type": "number" }
+  },
+  "required": [
+    "timestamp",
+    "energy_consumption",
+    "pred_anomaly"
+  ]
+}

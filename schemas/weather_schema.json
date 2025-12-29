@@ -1,0 +1,17 @@
+{
+  "title": "WeatherReading",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "temperature": { "type": "number" },
+    "humidity": { "type": "number" },
+    "wind_speed": { "type": "number" }
+  },
+  "required": [
+    "timestamp",
+    "temperature",
+    "humidity",
+    "wind_speed"
+  ],
+  "additionalProperties": false
+}

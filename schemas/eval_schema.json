@@ -1,0 +1,21 @@
+{
+  "title": "EvaluationMetrics",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "samples": { "type": "integer" },
+    "accuracy": { "type": "number" },
+    "precision": { "type": "number" },
+    "recall": { "type": "number" },
+    "f1": { "type": "number" },
+    "confusion_matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": { "type": "integer" }
+      }
+    },
+    "notes": { "type": "string" }
+  },
+  "required": ["timestamp", "accuracy", "precision", "recall", "f1"]
+}
