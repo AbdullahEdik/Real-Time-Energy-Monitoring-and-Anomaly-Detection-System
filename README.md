@@ -11,7 +11,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-2. Install dependencies (if you have a `requirements.txt`, use it; otherwise install common packages)
+2. Install dependencies
 
 ```powershell
 pip install -r requirements.txt
